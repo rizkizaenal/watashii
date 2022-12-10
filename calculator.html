@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+        .button {
+  flex-basis: 25%;
+  
+  /* properti pendukung */
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid black;
+  background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+  cursor: pointer;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.flex-container-column {
+   display: flex;
+   flex-direction: column;
+ 
+   /* properti pendukung */
+   max-width: 800px;
+   margin: 0 auto;
+   text-align: right;
+}
+.flex-container-row {
+  display: flex;
+}
+.double {
+   flex-basis: 50%;
+}
+.display {
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #333333;
+  border: 1px solid black;
+  font-size: 2em;
+}
+.operator,
+.negative,
+.equals {
+  background: orange;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 20px;
+}
+.button:hover {
+  font-weight: bold;
+}
+    </style>
+  <title>Web Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+    <div class="flex-container-column card"></div>
+  <div class="flex-container-column">
+    <div class="display">
+      <h1 id="displayNumber">0</h1>
+    </div>
+    <div class="flex-container-row">
+      <div class="button">7</div>
+      <div class="button">8</div>
+      <div class="button">9</div>
+      <div class="button negative">+/-</div>
+    </div>
+    <div class="flex-container-row">
+      <div class="button">4</div>
+      <div class="button">5</div>
+      <div class="button">6</div>
+      <div class="button operator">-</div>
+    </div>
+    <div class="flex-container-row">
+      <div class="button">1</div>
+      <div class="button">2</div>
+      <div class="button">3</div>
+      <div class="button operator">+</div>
+    </div>
+    <div class="flex-container-row">
+      <div class="button clear">CE</div>
+      <div class="button">0</div>
+      <div class="button equals">=</div>
+    </div>
+  </div>
+<script>const aString = '10';
+    const aNumber = 10
+    
+    console.log(aString == aNumber) // true, karena nilainya sama-sama 10
+    console.log(aString === aNumber) // false, karena walaupun nilainya sama, tetapi tipe datanya berbeda
+    
+    /* output
+    true
+    false
+    */</script>
+</body>
+</body>
+ 
+</html>
